@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #install i3 and dependencies
-sudo pacman -Sy --needed i3-gaps alacritty rofi dmenu lxappearance libev libxkbcommon-x11 pango perl startup-notification xcb-util-cursor xcb-util-keysyms xcb-util-wm xcb-util-xrm yajl i3lock i3status i3blocks tar feh maim blueman kdeconnect networkmanager network-manager-applet nm-connection-editor git base-devel
+sudo pacman -Sy --needed i3-gaps alacritty rofi dmenu lxappearance libev libxkbcommon-x11 pango perl startup-notification xcb-util-cursor xcb-util-keysyms xcb-util-wm xcb-util-xrm yajl i3lock i3status i3blocks tar feh maim blueman kdeconnect networkmanager network-manager-applet nm-connection-editor git base-devel pacman-contrib sysstat noto-fonts-cjk noto-fonts-emoji noto-fonts python3 acpi pavucontrol
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -16,6 +16,13 @@ tar -xf Nordic-darker-v40.tar.xz
 mkdir ~/.themes
 rm -r ~/.themes/Nordic-darker-v40
 cp -r Nordic-darker-v40 ~/.themes
+
+#download gtk icons and install.
+git clone https://github.com/vinceliuice/Qogir-icon-theme.git
+cd Qogir-icon-theme
+chmod +x install.sh
+./install.sh
+cd ..
 
 #install dotfiles and delete old
 rm -r ~/.config/rofi
