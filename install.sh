@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #install i3 and dependencies
-sudo pacman -Sy --needed i3-gaps alacritty rofi dmenu lxapperance libev libxkbcommon-x11 pango perl startup-notification xcb-util-cursor xcb-util-keysyms xcb-util-wm xcb-util-xrm yajl i3lock i3status i3blocks tar feh maim blueman kdeconnect networkmanager network-manager-applet nm-connection-editor git base-devel
+sudo pacman -Sy --needed i3-gaps alacritty rofi dmenu lxappearance libev libxkbcommon-x11 pango perl startup-notification xcb-util-cursor xcb-util-keysyms xcb-util-wm xcb-util-xrm yajl i3lock i3status i3blocks tar feh maim blueman kdeconnect networkmanager network-manager-applet nm-connection-editor git base-devel
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
